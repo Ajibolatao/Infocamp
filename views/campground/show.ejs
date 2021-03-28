@@ -1,0 +1,39 @@
+<div class="show-page">
+
+   <div class="camp">
+      <h3 class="camp-title">
+         <%= camp.title %>
+      </h3>
+      <img src="<%= camp.img %>" alt="" class="main-img">
+      <div class="edit-section">
+         <a href="/<%= camp._id %>/edit" class="small-btn">Edit</a>
+         
+         <form action="/<%= camp._id %>?_method=delete" method="post" id="del-form">
+            <input type="submit" value="Delete" class="small-btn del-btn">
+         </form>
+      </div>
+      <small><%= camp.date.toLocaleString() %></small>
+      <p class="camp-desc">
+         <%= camp.desc %>
+      </p>
+   </div>
+
+   <!-- Comments -->
+   <div class="comment-section">
+      <div class="add-comment">
+         <a href="/<%= camp._id %>/comment/new" class="btn">Add comment</a>
+      </div>
+
+      <% camp.comments.forEach(comment => { %>
+         <div class="each-comment">
+            <p> <%= comment.content %> </p>
+            <a href="/<%= camp._id %>/comment/<%= comment._id %>/edit" class="small-btn">Edit</a>
+            
+            <form action="/<%= camp._id %>/comment/<%= comment._id %>?_method=delete" method="post" id="del-form">
+               <input type="submit" value="Delete" class="small-btn del-btn">
+            </form>
+         </div>
+      <% }) %>
+   </div>
+
+</div>

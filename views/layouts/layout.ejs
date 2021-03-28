@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="/styles/layout.css">
+   <link rel="stylesheet" href="/styles/index.css">
+   <link rel="stylesheet" href="/styles/comment.css">
+   <link rel="stylesheet" href="/styles/auth.css">
+
+   <title>Info Camp</title>
+</head>
+<body>
+   <div class="container">
+      <!-- Header -->
+      <header class="header">
+         <div class="logo">
+            <a href="/">
+               <img src="/images/logo.png" alt="logo">
+            </a>
+            
+         </div>
+         <div class="menu">
+            <ul class="menu-items">
+               <li class="menu-item">
+                  <a href="/register" class="btn">Sign up</a>
+               </li>
+               <li class="menu-item">
+                  <a href="/login" class="btn">Log in</a>
+               </li>
+               <li class="menu-item">
+                  <a href="/logout" class="btn">Log out</a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <%- body %>
+
+      <!-- Footer -->
+      <footer class="footer">
+         <footer-items>
+            <ul>
+               <li><a href="/new" class="small-btn">Create camp</a></li>
+            </ul>
+         </footer-items>
+         <div class="footer-bottom">
+            &copy; 2021 | Infonoun
+         </div>
+         
+      </footer>
+   </div>
+</body>
+</html>

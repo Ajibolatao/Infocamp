@@ -1,0 +1,55 @@
+/* SIGN UP and LOGIN PAGE */
+
+.sign-up-page form, 
+.login-page form {
+  width: 80%;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.sign-up-page .form-group,
+.login-page .form-group {
+  padding: 0.5rem 0;
+}
+
+.sign-up-page .name-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.sign-up-page .form-title,
+.login-page .form-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.sign-up-page label,
+.login-page label {
+  display: block;
+}
+
+.sign-up-page input,
+.login-page input {
+  display: block;
+  font-size: 1rem;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+
+.sign-up-page input[type="submit"],
+.login-page input[type="submit"] {
+  background: rgb(115, 228, 134);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0.5rem;
+}
+
+.sign-up-page input[type="submit"]:hover,
+.login-page input[type="submit"]:hover {
+  background: rgb(102, 196, 117);
+  color: antiquewhite;
+}

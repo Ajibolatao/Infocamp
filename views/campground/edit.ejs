@@ -1,0 +1,25 @@
+<div class="edit-page">
+   <form action="/<%= camp._id %>?_method=PUT" method="post">
+      <div class="form-group">
+         <h2 class="form-title">
+            Edit campground
+         </h2>
+      </div>
+      <div class="form-group">
+         <label>Title</label>
+         <input type="text" name="title" value="<%= camp.title %>">
+      </div>
+      <div class="form-group">
+         <label>img</label>
+         <input type="text" name="img" value="<%= camp.img %>">
+      </div>
+      <div class="form-group">
+         <label>Description</label>
+         <textarea name="desc"><%= camp.desc %></textarea>
+      </div>
+      <div class="form-group">
+         <input type="submit" value="Update">
+      </div>
+   </form>
+
+</div>

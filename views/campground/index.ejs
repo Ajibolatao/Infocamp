@@ -1,0 +1,24 @@
+
+
+<div class="index-page">
+   <div class="main-title">
+      <h1>Info camp</h1>
+   </div>
+
+   <!-- Show camp in grid -->
+   <div class="show-camps">
+      <% camps.forEach(camp=> { %>
+         <div class="camp">
+            <img src="<%= camp.img %>" alt="">
+            <h3 class="camp-title">
+               <%= camp.title %>
+            </h3>
+            <p class="camp-desc">
+               <%= camp.desc %>
+            </p>
+            <a href="/<%= camp._id %>" class="btn more-btn">See more</a>
+         </div>
+      <% }) %>
+   </div>
+</div>
+

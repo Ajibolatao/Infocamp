@@ -1,0 +1,17 @@
+<div class="comment-edit-page">
+   <form action="/<%= camp._id %>/comment/<%= comment._id %>?_method=put" method="post">
+      <div class="form-group">
+         <h2 class="form-title">
+            Edit comment
+         </h2>
+      </div>
+      <div class="form-group">
+         <label>Content</label>
+         <textarea name="content"><%= comment.content %></textarea>
+      </div>
+      <div class="form-group">
+         <input type="submit" value="Update">
+      </div>
+   </form>
+
+</div>
